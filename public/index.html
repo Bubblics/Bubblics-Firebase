@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="author" content="Bubblics Inc.">
+
+      <title>Bubblics</title>
+      <meta name="description" content="Say more with your photos using special emojis and customizable stickers.">
+
+      <link rel="shortcut icon" type="image/x-icon" href="/assets/icons/favicon.ico"/>
+      <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/144.png" />
+      <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/114.png" />
+      <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/72.png" />
+      <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/57.png" />
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400">
+      <link rel="stylesheet" href="/assets/css/animate.css">
+      <link rel="stylesheet" href="/assets/css/site.css">
+   </head>
+
+   <body>
+      <header>
+         <div id="background"></div>
+         <img id="heart" src="/assets/images/sticker_heart@3x.png"/>
+         <img id="sohooot" src="/assets/images/sticker_sohooot@3x.png"/>
+         <img id="yesiam" src="/assets/images/sticker_yesiam@3x.png"/>
+         <div id="bubblics">
+            <div class="bubblics container-fluid">
+      			<img id="mockup" src="/assets/images/mockup@2x.png"/>
+               <div id="logo-block">
+                  <img id="logo" src="/assets/images/weblogo@2x.png"/>
+                  <h2 id="description">Say more with your photos using special emojis and customizable stickers.</h2>
+                  <div id="store-block" class="container-fluid">
+            			<a id="app-store" target="_blank" data-toggle="modal" data-target="#myModal" style="cursor: pointer;"></a>
+            			<a id="play-store" href="https://play.google.com/store/apps/details?id=com.instastckr" target="_blank"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <a id="modal-close" data-dismiss="modal" style="cursor: pointer;"></a>
+            <h5 id="modal-title">Coming Soon!</h5>
+            <h6 id="modal-description">We will let you know when the iPhone app is ready (No spam)</h6>
+            <div>
+              <h4 id="modal-thank-you">Thank You :)</h4>
+              <input id="modal-input" placeholder="Enter your Email" type="email" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
+              <button id="modal-submit" style="cursor: pointer;" onclick="subscribe()">NOTIFY ME</button>
+            </div>
+           </div>
+        </div>
+      </div>
+
+      <div id="pickupline">
+         <h3 id="pickupline-text">Add stickers on your photos<br>&<br>Share on Instagram</h3>
+      </div>
+
+      <div id="screenshots" class="container-fluid">
+			   <img class="screenshots" src="/assets/images/mockup_howitworks1@2x.png"/>
+			   <img class="screenshots" src="/assets/images/mockup_howitworks2@2x.png"/>
+			   <img class="screenshots" src="/assets/images/mockup_howitworks3@2x.png"/>
+      </div>
+
+      <div id="features" class="container-fluid">
+         <img id="emoji" class="center-block" src="/assets/images/function_emoji@2x.png"/>
+         <h4 id="emoji-text" class="center-block">Express your feelings with special emojis!</h4>
+         <img id="mainmenu" class="center-block" src="/assets/images/function_mainmenu@2x.png"/>
+         <h4 id="mainmenu-text" class="center-block">Incluses customizable elements such as text, text color, font, sticker color, sticker opacity and sticker styles.</h4>
+      </div>
+
+      <div id="instagram">
+			  <a id="hashtag" class="center-block" href="https://instagram.com/explore/tags/bubblics/" target="_blank"></a>
+        <div id="samples" class="container-fluid">
+   			   <img id="instapic01" class="samples" src="/assets/images/instapic01@2x.png"/>
+   			   <img id="instapic02" class="samples" src="/assets/images/instapic02@2x.png"/>
+   			   <img id="instapic03" class="samples" src="/assets/images/instapic03@2x.png"/>
+   			   <img id="instapic04" class="samples" src="/assets/images/instapic04@2x.png"/>
+   			   <img id="instapic05" class="samples" src="/assets/images/instapic05@2x.png"/>
+   			   <img id="instapic06" class="samples" src="/assets/images/instapic06@2x.png"/>
+        </div>
+      </div>
+
+      <footer>
+        <a href="https://mixpanel.com/f/partner" target="_blank" rel="nofollow">
+          <img id="mixpanel" class="center-block" src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" />
+        </a>
+      </footer>
+
+      <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyCwBk-ZBcQwFsb3tRKmFCm4PYy7JNb1uxM",
+          authDomain: "bubblics-bb9ae.firebaseapp.com",
+          databaseURL: "https://bubblics-bb9ae.firebaseio.com",
+          storageBucket: "bubblics-bb9ae.appspot.com",
+          messagingSenderId: "1022951816189"
+        };
+        firebase.initializeApp(config);
+      </script>
+      <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="/assets/js/wow.min.js"></script>
+      <script>new WOW().init();</script>
+      <script>
+         $(document).ready(function() {
+            if (width <= 893) {
+               $("#bubblics").css("margin-top", 0);
+
+               $("#heart").css("display", "block");
+               $("#sohooot").css("display", "block");
+               $("#yesiam").css("display", "block");
+            } else {
+               $("#bubblics").css("margin-top", - 650 / 1024 * width * 0.30);
+
+               $("#heart").css("display", "none");
+               $("#sohooot").css("display", "none");
+               $("#yesiam").css("display", "none");
+            }
+         });
+      </script>
+      <script>
+         var width = $(window).width();
+         var height = $(window).height();
+
+         $("#bubblics").css("width", width);
+         $("#bubblics").css("height", 650 / 1024 * width * 0.90 + 250);
+         $("#background").css("height", 650 / 1024 * width);
+
+         $("#heart").css("width", 74.7 / 1024 * width);
+         $("#heart").css("height", 73.3 / 1024 * width);
+         $("#heart").css("margin-top", 40 / 1024 * width);
+         $("#heart").css("margin-left", 230 / 1024 * width);
+
+         $("#sohooot").css("width", 197.3 / 1024 * width);
+         $("#sohooot").css("height", 75.3 / 1024 * width);
+         $("#sohooot").css("margin-top", 135 / 1024 * width);
+         $("#sohooot").css("margin-left", 195 / 1024 * width);
+
+         $("#yesiam").css("width", 158.7 / 1024 * width);
+         $("#yesiam").css("height", 75.3 / 1024 * width);
+         $("#yesiam").css("margin-top", 163 / 1024 * width);
+         $("#yesiam").css("margin-left", 724 / 1024 * width);
+
+         if (width / height > 1024/ 650)
+            $("#background").css("background-size", "cover");
+         else
+            $("#background").css("background-size", "contain");
+
+         if (width <= 893) {
+            $("#bubblics").css("margin-top", 0);
+
+            $("#heart").css("display", "block");
+            $("#sohooot").css("display", "block");
+            $("#yesiam").css("display", "block");
+         } else {
+            $("#bubblics").css("margin-top", - 650 / 1024 * width * 0.30);
+
+            $("#heart").css("display", "none");
+            $("#sohooot").css("display", "none");
+            $("#yesiam").css("display", "none");
+         }
+
+         $(window).resize(function() {
+            var width = $(window).width();
+            var height = $(window).height();
+
+            $("#bubblics").css("width", width);
+            $("#bubblics").css("height", 650 / 1024 * width * 0.90 + 250);
+            $("#background").css("height", 650 / 1024 * width);
+
+            $("#heart").css("width", 74.7 / 1024 * width);
+            $("#heart").css("height", 73.3 / 1024 * width);
+            $("#heart").css("margin-top", 40 / 1024 * width);
+            $("#heart").css("margin-left", 230 / 1024 * width);
+
+            $("#sohooot").css("width", 197.3 / 1024 * width);
+            $("#sohooot").css("height", 75.3 / 1024 * width);
+            $("#sohooot").css("margin-top", 135 / 1024 * width);
+            $("#sohooot").css("margin-left", 195 / 1024 * width);
+
+            $("#yesiam").css("width", 158.7 / 1024 * width);
+            $("#yesiam").css("height", 75.3 / 1024 * width);
+            $("#yesiam").css("margin-top", 163 / 1024 * width);
+            $("#yesiam").css("margin-left", 724 / 1024 * width);
+
+            if (width / height > 1024/ 650)
+               $("#background").css("background-size", "cover");
+            else
+               $("#background").css("background-size", "contain");
+
+            if (width <= 893) {
+               $("#bubblics").css("margin-top", 0);
+
+               $("#heart").css("display", "block");
+               $("#sohooot").css("display", "block");
+               $("#yesiam").css("display", "block");
+            } else {
+               $("#bubblics").css("margin-top", - 650 / 1024 * width * 0.30);
+
+               $("#heart").css("display", "none");
+               $("#sohooot").css("display", "none");
+               $("#yesiam").css("display", "none");
+            }
+         });
+      </script>
+      <script>
+         $('.modal').on('shown.bs.modal', function() {
+            $('body').css('position','fixed');
+            $("#modal-input").focus();
+         });
+         $('.modal').on('hidden.bs.modal', function() {
+            $('body').css('position','relative');
+            $('#modal-input').css("display", "block");
+            $('#modal-submit').css("display", "block");
+            $('#modal-thank-you').css("display", "none");
+         });
+      </script>
+
+      <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+      <script>
+         function subscribe() {
+            var email = $("#modal-input").val();
+            if (email && email.length > 0) {
+               Parse.initialize("xRmLMsYx5yWnE3JWYPYIToUm0NPqacXVr8jFoU6C", "nTokTB9of3iigpwBevZny1T1FnvLwwaZ6iWVN0sb");
+               var Subscription = Parse.Object.extend("Subscription");
+               var subscription = new Subscription();
+               subscription.save({email: email});
+            }
+            $('#modal-input').css("display", "none");
+            $('#modal-submit').css("display", "none");
+            $('#modal-thank-you').css("display", "block");
+         }
+      </script>
+   </body>
+</html>
