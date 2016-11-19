@@ -68,7 +68,8 @@
   color: #cccccc;
 }
 
-textarea, input[type="text"] {
+input[type="text"],
+textarea {
   -webkit-appearance: none;
 }
 
@@ -86,8 +87,8 @@ textarea, input[type="text"] {
   width: 51px;
   height: 51px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   /*
    * Set a counter and get the length of the image path.
    */
@@ -251,7 +252,7 @@ textarea, input[type="text"] {
   .modal-content {
     width: 300px;
     height: 260px;
-    margin-left: 0px;
+    margin-left: 0;
     border-radius: 2px;
   }
 }

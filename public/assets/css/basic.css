@@ -1,5 +1,17 @@
 /* Basic Styles */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, button {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Work Sans";
   font-weight: 200;
   color: #000000;
@@ -8,32 +20,37 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, button {
   margin-bottom: 0;
 }
 
-h2, .h2 {
+.h2,
+h2 {
   font-size: 26px;
   letter-spacing: 0.26px;
   line-height: 140%;
 }
 
-h3, .h3 {
+.h3,
+h3 {
   font-size: 22px;
   letter-spacing: 0.22px;
   line-height: 140%;
 }
 
-h4, .h4 {
+.h4,
+h4 {
   font-size: 18px;
   letter-spacing: 0.18px;
   line-height: 170%;
 }
 
-h5, .h5 {
+.h5,
+h5 {
   font-size: 28px;
   letter-spacing: 0.28px;
   line-height: 140%;
   font-weight: 400;
 }
 
-h6, .h6 {
+.h6,
+h6 {
   font-size: 20px;
   letter-spacing: 0.20px;
   line-height: 170%;
@@ -42,25 +59,41 @@ h6, .h6 {
 }
 
 @media (max-width: 767px) {
-  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, button {
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  button,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: 300;
   }
-  h2, .h2 {
+  .h2,
+  h2 {
     font-size: 20px;
     letter-spacing: 0.2px;
     line-height: 160%;
   }
-  h3, .h3 {
+  .h3,
+  h3 {
     font-size: 18px;
     letter-spacing: 0.18px;
     line-height: 160%;
   }
-  h5, .h5 {
+  .h5,
+  h5 {
     font-size: 20px;
     letter-spacing: 0.20px;
     line-height: 160%;
   }
-  h6, .h6 {
+  .h6,
+  h6 {
     font-size: 16px;
     letter-spacing: 0.16px;
     line-height: 170%;
