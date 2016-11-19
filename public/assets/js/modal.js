@@ -12,11 +12,10 @@ $('.modal').on('hidden.bs.modal', function() {
 function subscribe() {
   var email = $("#modal-input").val();
   if (email && email.length > 0) {
-    Parse.initialize("xRmLMsYx5yWnE3JWYPYIToUm0NPqacXVr8jFoU6C", "nTokTB9of3iigpwBevZny1T1FnvLwwaZ6iWVN0sb");
-    var Subscription = Parse.Object.extend("Subscription");
-    var subscription = new Subscription();
-    subscription.save({
-      email: email
+    var subscriptionsRef = firebase.database().ref("subscriptions");
+    var newSubscriptionRef = subscriptionsRef.push();
+    newSubscriptionRef.set({
+      'email': email
     });
   }
   $('#modal-input').css("display", "none");
