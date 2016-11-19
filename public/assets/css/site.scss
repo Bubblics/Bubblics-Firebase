@@ -1,0 +1,280 @@
+/* Site Style */
+@import 'retina';
+
+header {
+   display: block;
+   width: 100%;
+   width: 100vw;
+}
+
+#background {
+   position: absolute;
+   background-repeat: no-repeat;
+   background-position: top;
+   z-index: -1;
+   width: 100%;
+}
+
+#heart {
+   position: absolute;
+   display: none;
+}
+
+#sohooot {
+   position: absolute;
+   display: none;
+}
+
+#yesiam {
+   position: absolute;
+   display: none;
+}
+
+#bubblics {
+   position: relative;
+   height: 4000px;
+}
+
+.bubblics {
+   position: absolute;
+   margin-left: -462px;
+   bottom: 0vh;
+   left: 50vw;
+   padding: 0px;
+}
+
+#mockup {
+   width: 515px;
+   height: 503px;
+   @include retina('/assets/images/mockup.png', 2, 515px 503px, no-repeat);
+}
+
+@media (max-width: 893px) {
+   #mockup {
+      display: none;
+   }
+}
+
+#logo-block {
+   width: 310px;
+   display: inline-block;
+   vertical-align: bottom;
+   margin-left: 50px;
+   margin-bottom: 43px;
+}
+
+#logo {
+   width: 200px;
+   height: 47px;
+   @include retina('/assets/images/weblogo.png', 2, 200px 47px, no-repeat);
+}
+
+#description {
+   text-align: left;
+   padding-top: 25px;
+   padding-bottom: 25px;
+}
+
+#store-block {
+   padding-left: 0px;
+   margin-left: 0px;
+}
+
+#app-store {
+   cursor: pointer;
+   display: inline-block;
+   width: 132px;
+   height: 40px;
+   margin-right: 15px;
+   margin-left: -2px;
+   margin-top: -2px;
+   margin-bottom: -2px;
+   @include retina('/assets/images/appbutton_appstore_soon_s.png', 2, 132px 40px, no-repeat);
+}
+
+#play-store {
+   cursor: pointer;
+   display: inline-block;
+   width: 132px;
+   height: 40px;
+   margin: -2px;
+   @include retina('/assets/images/appbutton_googleplay.png', 2, 132px 40px, no-repeat);
+}
+
+@media (max-width: 893px) {
+   .bubblics {
+      width: 100%;
+      margin: auto;
+      bottom: 0;
+      left: 0;
+   }
+   #logo-block {
+      display: block;
+      margin: auto;
+      vertical-align: bottom;
+   }
+   #logo {
+      display: block;
+      margin: auto;
+   }
+   #description {
+      text-align: center;
+   }
+   #store-block {
+      padding-right: 0px;
+   }
+   #app-store {
+      margin-left: 15px;
+   }
+}
+
+#pickupline-text {
+   padding-top: 80px;
+   padding-bottom: 37px;
+}
+
+@media (max-width: 767px) {
+   #pickupline-text {
+      padding-top: 38px;
+      padding-bottom: 23px;
+   }
+}
+
+#screenshots {
+   width: 986px;
+   margin-bottom: 70px;
+}
+
+@media (max-width: 985px) {
+   #screenshots {
+      width: 310px;
+      margin-bottom: 25px;
+   }
+}
+
+.howitworks {
+   width: 275px;
+   height: 485px;
+   border-image-width: 0;
+   margin-left: 18px;
+   margin-right: 18px;
+}
+
+#howitworks1 {
+  @include retina('/assets/images/mockup_howitworks1.png', 2, 275px 485px, no-repeat);
+}
+
+#howitworks2 {
+  @include retina('/assets/images/mockup_howitworks2.png', 2, 275px 485px, no-repeat);
+}
+
+#howitworks3 {
+  @include retina('/assets/images/mockup_howitworks3.png', 2, 275px 485px, no-repeat);
+}
+
+#features {
+   background-color: #f15f26;
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+#emoji {
+   width: 221px;
+   height: 80px;
+   margin-bottom: 30px;
+   @include retina('/assets/images/function_emoji.png', 2, 221px 80px, no-repeat);
+}
+
+#emoji-text {
+   max-width: 470px;
+   color: #ffffff;
+}
+
+#mainmenu {
+   width: 221px;
+   height: 119px;
+   margin-top: 60px;
+   margin-bottom: 30px;
+   @include retina('/assets/images/function_mainmenu.png', 2, 221px 119px, no-repeat);
+}
+
+#mainmenu-text {
+   max-width: 470px;
+   color: #ffffff;
+}
+
+@media (max-width: 767px) {
+   #features {
+      padding-top: 45px;
+      padding-bottom: 45px;
+   }
+   #mainmenu {
+      margin-bottom: 20px;
+   }
+   #emoji {
+      margin-top: 45px;
+      margin-bottom: 20px;
+   }
+}
+
+#instagram {
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+#hashtag {
+   width: 86.5px;
+   height: 30.5px;
+   margin-bottom: 30px;
+   @include retina('/assets/images/oninstagram.png', 2, 86.5px 30.5px, no-repeat);
+}
+
+#samples {
+   width: 908px;
+}
+
+@media (max-width: 907px) {
+   #samples {
+      width: 614px;
+   }
+}
+
+@media (max-width: 613px) {
+   #samples {
+      width: 320px;
+   }
+}
+
+.samples {
+   width: 260px;
+   height: 260px;
+   margin: 15px;
+}
+
+#instapic01 {
+   @include retina('/assets/images/instapic01.png', 2, 260px 260px, no-repeat);
+}
+
+#instapic02 {
+   @include retina('/assets/images/instapic02.png', 2, 260px 260px, no-repeat);
+}
+
+#instapic03 {
+   @include retina('/assets/images/instapic03.png', 2, 260px 260px, no-repeat);
+}
+
+#instapic04 {
+   @include retina('/assets/images/instapic04.png', 2, 260px 260px, no-repeat);
+}
+
+#instapic05 {
+   @include retina('/assets/images/instapic05.png', 2, 260px 260px, no-repeat);
+}
+
+#instapic06 {
+   @include retina('/assets/images/instapic06.png', 2, 260px 260px, no-repeat);
+}
+
+#mixpanel {
+   margin-bottom: 20px;
+}
