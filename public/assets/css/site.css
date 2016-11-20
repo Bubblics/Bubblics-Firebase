@@ -239,5 +239,7 @@ header {
 }
 
 #mixpanel {
+  width: 115px;
+  height: 36.5px;
   margin-bottom: 20px;
 }
